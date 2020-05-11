@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class DruidConfiguration {
 
     @Bean
-    public ServletRegistrationBean druidStatViewServle() {
+    public ServletRegistrationBean druidStatViewServlet() {
         //注册服务
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
         // 白名单(为空表示,所有的都可以访问,多个IP的时候用逗号隔开)
